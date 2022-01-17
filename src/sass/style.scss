@@ -9,13 +9,10 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
-.title {
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
-    color: #0D0D0D;
-}
+@import 'blocks/titles';
 @import 'blocks/advantages';
+@import 'blocks/consultation';
+
 
 
 @import 'blocks/media';
