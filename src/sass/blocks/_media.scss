@@ -60,9 +60,6 @@
             font-size: 30px;
         }
     }
-    /* .consultation {
-        
-    } */
     .carousel {
         &__inner {
             width: 95%;
@@ -128,5 +125,19 @@
     }
     .title {
         font-size: 24px;
+        &_left {
+            font-size: 18px;
+        }
+    }
+    .consultation {
+        &__descr {
+            display: none;
+        }
+    }
+    .feed-form {
+        width: 265px;
+        input {
+            width: auto;
+        }
     }
 }
