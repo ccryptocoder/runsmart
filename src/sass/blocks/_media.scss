@@ -55,6 +55,22 @@
             margin-top: 20px;
         }
     }
+    .title {
+        &_left {
+            font-size: 30px;
+        }
+    }
+    /* .consultation {
+        
+    } */
+    .carousel {
+        &__inner {
+            width: 95%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
