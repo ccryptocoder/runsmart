@@ -1,6 +1,7 @@
 @import 'base/variables';
 * {
     font-family: $main-font, sans-serif;
+    box-sizing: border-box;
 }
 .container {
     max-width: 950px;
@@ -14,6 +15,6 @@
 @import 'blocks/consultation';
 @import 'blocks/forms';
 @import 'blocks/carousel';
-
+@import 'blocks/catalog';
 
 @import 'blocks/media';
