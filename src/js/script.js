@@ -5,6 +5,7 @@ $(document).ready(function(){
         autoplaySpeed: 3000,
         prevArrow: '<button type="button" class="slick-arrow slick-prev"><img src="icons/left_arrow.png" alt=""></button>',
         nextArrow: '<button type="button" class="slick-arrow slick-next"><img src="icons/right_arrow.png" alt=""></button>',
+        /* adaptiveHeight: true, */
         responsive: [
             {
                 breakpoint: 992,
