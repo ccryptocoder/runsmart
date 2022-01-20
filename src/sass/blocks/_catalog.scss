@@ -25,14 +25,18 @@
         div {
             transform: skewX(20deg);
         }
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            border: 2px solid #FFFFFF;
+        }
         &_active {
             border: none;
             background-color: $main-color;
             color: #FFFFFF;
-        }
-        &:hover {
-            box-shadow: 3px 3px 20px $main-color;
-            border: 2px solid #FFFFFF;
+            &:hover {
+                box-shadow: 3px 3px 20px $main-color;
+                border: none;
+            }
         }
     }
     &__content {
