@@ -29,7 +29,7 @@ $(document).ready(function(){
 		  .closest('div.container').find('div.catalog__content').removeClass('catalog__content_active').eq($(this).index()).addClass('catalog__content_active');
 	  });
 
-	  /* function toggleSlide(className) {
+	  function toggleSlide(className) {
 		$(className).each(function(i) {
 			$(this).on('click', function(e) {
 			  e.preventDefault();
@@ -40,9 +40,9 @@ $(document).ready(function(){
 	  }
 
 	  toggleSlide('.catalog-item__back');
-	  toggleSlide('.catalog-item__link'); */
+	  toggleSlide('.catalog-item__link');
 
-	const moreLinks = Array.from(document.querySelectorAll('.catalog-item__link'));
+	/* const moreLinks = Array.from(document.querySelectorAll('.catalog-item__link'));
 	const backLinks = Array.from(document.querySelectorAll('.catalog-item__back'));
 	const catalogItemMainPages = Array.from(document.querySelectorAll('.catalog-item__content'));
 	const catalogItemBackPages = Array.from(document.querySelectorAll('.catalog-item__list'));
@@ -58,7 +58,7 @@ $(document).ready(function(){
 	}
 
 	toggleSlide(moreLinks);
-	toggleSlide(backLinks);
+	toggleSlide(backLinks); */
 
   });
 		  
