@@ -143,6 +143,12 @@
 }
 
 @media (max-width: 575px) {
+    .xs-hidden {
+        display: none;
+    }
+    .xs-visible {
+        display: block;
+    }
     .container {
         max-width: 90%;
     }
@@ -196,20 +202,35 @@
         }
     }
     .title {
+        text-align: center;
         font-size: 24px;
         &_left {
-            font-size: 18px;
+            padding-right: 0;
+            font-size: 24px;
         }
     }
     .consultation {
+        min-height: 450px;
+        padding: 50px 0 52px 0;
         &__descr {
-            display: none;
+            font-size: 16px;
+            text-align: center;
         }
     }
     .feed-form {
-        width: 265px;
+        margin: 0 auto;
+        margin-top: 36px;
+        width: 86%;
         input {
-            width: auto;
+            width: 100%;
+        }
+    }
+    .catalog {
+        &-item {
+            margin: 0 0 20px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
