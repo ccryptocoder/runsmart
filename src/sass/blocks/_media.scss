@@ -75,6 +75,15 @@
             }
         }
     }
+    .reviews {
+        &-item {
+            &__img {
+                width: 150px;
+                height: 150px;
+                margin-right: 35px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -138,6 +147,23 @@
     .button {
         &_mini {
             width: 100px;
+        }
+    }
+    .reviews {
+        &-item {
+            flex-direction: column;
+            margin-top: 50px;
+            &__img {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+            &__title, &__subtitle {
+                text-align: center;
+            }
+            &__title {
+                margin-top: 12px;
+            }
         }
     }
 }
