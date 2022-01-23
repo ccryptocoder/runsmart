@@ -227,10 +227,20 @@
     }
     .catalog {
         &__tab {
-            line-height: 47px;
+            height: 45px;
+            line-height: 42px;
             font-size: 11px;
-            div {
-                margin-top: 2px;
+            &:hover {
+                box-shadow: none;
+                border: 2px solid #D0D0D0;
+            }
+            &_active {
+                font-size: 12px;
+                line-height: 46px;
+                &:hover {
+                    box-shadow: none;
+                    border: none;
+                }
             }
         }
         &__content {
@@ -276,12 +286,29 @@
             &__new-price {
                 font-size: 18px;
             }
+            &__list ul li {
+                padding-right: 15px;
+            }
         }
     }
     .button {
         &_mini {
             width: 115px;
             height: 40px;
+        }
+    }
+}
+
+@media (max-width: 379px) {
+    .catalog {
+        &__tab {
+            height: 45px;
+            line-height: 42px;
+            font-size: 9px;
+            &_active {
+                font-size: 9.5px;
+                line-height: 46px;
+            }
         }
     }
 }
