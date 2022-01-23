@@ -84,6 +84,21 @@
             }
         }
     }
+    .footer {
+        &__info {
+            width: 420px;
+            height: 230px;
+        }
+        &__address {
+            margin-top: 35px;
+        }
+        &__phone {
+            margin-top: 21px;
+        }
+        &__social {
+            margin-top: 26px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -321,6 +336,32 @@
         &_mini {
             width: 115px;
             height: 40px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 80%;
+            height: 200px;
+        }
+        &__address {
+            margin-top: 29px;
+            font-size: 16px;
+        }
+        &__phone {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+        &__social {
+            margin-top: 18px;
+        }
+        &__icon {
+            width: 45px;
+            height: 45px;
+            margin-right: 24px;
+            padding-top: 0;
+            i {
+                font-size: 22px;
+            }
         }
     }
 }
