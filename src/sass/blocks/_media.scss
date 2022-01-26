@@ -367,6 +367,20 @@
             }
         }
     }
+    .modal {
+        width: 320px;
+        &__subtitle {
+            font-size: 17px;
+            padding: 0 10px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            right: 10px;
+            top: 12px;
+        }
+    }
 }
 
 @media (max-width: 379px) {
@@ -379,6 +393,23 @@
                 font-size: 9.5px;
                 line-height: 46px;
             }
+        }
+    }
+    .catalog-item__list ul li {
+        padding-right: 0;
+    }
+    .modal {
+        width: 285px;
+        &__subtitle {
+            font-size: 17px;
+            padding: 0 10px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+        &__close {
+            right: 10px;
+            top: 12px;
         }
     }
 }
