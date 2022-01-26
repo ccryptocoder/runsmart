@@ -51,15 +51,17 @@ $(document).ready(function(){
 		$('.overlay, #consultation, #order, #thanks').fadeOut();
 	  });
 
-	  $('.button_mini').on('click', function() {
-		$('.overlay, #order').fadeIn();
-		$('#order__descr').text($('.catalog-item__subtitle').text());
-	  });
+	  $('.button_mini').each(function(i) {
+		  $(this).on('click', function() {
+			$('.overlay, #order').fadeIn();
+			$('#order__descr').text($('.catalog-item__subtitle').eq(i).text());
+		  })
+	  })
 
-	  $('.button_submit').on('click', function() {
+	  /* $('.button_submit').on('click', function() {
 		$('#order').fadeOut(); 
 		$('.overlay, #thanks').fadeIn('slow');
-	  });
+	  }); */
 
 	/* const moreLinks = Array.from(document.querySelectorAll('.catalog-item__link'));
 	const backLinks = Array.from(document.querySelectorAll('.catalog-item__back'));
