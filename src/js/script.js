@@ -90,6 +90,27 @@ $(document).ready(function(){
 
 	  $('input[name=phone]').mask('+7 (999) 999-99-99');
 
+	  $('form').submit(function(e) {
+		e.preventDefault();
+
+		if(!$(this).valid()) {
+			return; //если форма не прошла валидацию, она не отправится
+		}
+
+		$.ajax({
+			type: 'POST',
+			url: 'mailer/smart.php',
+			data: $(this).serialize(),
+		}).done(function() {
+			$(this).find('input').val('');
+			
+			$('#order, #consultation').fadeOut(); 
+			$('.overlay, #thanks').fadeIn('slow');
+
+			$('form').trigger('reset');
+		});
+		return false;
+	  });
 
 	  /* $('.button_submit').on('click', function() {
 		$('#order').fadeOut(); 
