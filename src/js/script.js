@@ -58,6 +58,37 @@ $(document).ready(function(){
 		  })
 	  })
 
+	  /* $('.feed-form').each(function() {
+		  $(this).validate();
+	  }) */
+
+	  function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: 'required',
+				tel: 'required',
+				email: {
+				  required: true,
+				  email: true
+				}
+			},
+			messages: {
+				name: 'Это поле обязательно',
+				tel: 'Это поле обязательно',
+				email: {
+					required: 'Это поле обязательно',
+					email: 'Некорректный email адрес'
+				}
+  
+			}
+		});
+	  }
+
+	  validateForm('#consultation-form');
+	  validateForm('#consultation form');
+	  validateForm('#order form');
+
+
 	  /* $('.button_submit').on('click', function() {
 		$('#order').fadeOut(); 
 		$('.overlay, #thanks').fadeIn('slow');
