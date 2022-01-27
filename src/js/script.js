@@ -88,6 +88,8 @@ $(document).ready(function(){
 	  validateForm('#consultation form');
 	  validateForm('#order form');
 
+	  $('input[name=tel]').mask('+7 (999) 999-99-99');
+
 
 	  /* $('.button_submit').on('click', function() {
 		$('#order').fadeOut(); 
