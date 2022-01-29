@@ -122,6 +122,8 @@ $(document).ready(function(){
 		  }
 	  });
 
+	  new WOW().init();
+
 	/* const moreLinks = Array.from(document.querySelectorAll('.catalog-item__link'));
 	const backLinks = Array.from(document.querySelectorAll('.catalog-item__back'));
 	const catalogItemMainPages = Array.from(document.querySelectorAll('.catalog-item__content'));
