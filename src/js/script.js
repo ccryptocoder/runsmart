@@ -112,10 +112,15 @@ $(document).ready(function(){
 		return false;
 	  });
 
-	  /* $('.button_submit').on('click', function() {
-		$('#order').fadeOut(); 
-		$('.overlay, #thanks').fadeIn('slow');
-	  }); */
+	  // pageup
+
+	  $(window).scroll(function() {
+		  if ($(this).scrollTop() > 1200) {
+			  $('.pageup').fadeIn();
+		  }else {
+			  $('.pageup').fadeOut();
+		  }
+	  });
 
 	/* const moreLinks = Array.from(document.querySelectorAll('.catalog-item__link'));
 	const backLinks = Array.from(document.querySelectorAll('.catalog-item__back'));
